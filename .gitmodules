@@ -1,0 +1,12 @@
+[submodule "gaussian-splatting"]
+	path = gaussian-splatting
+	url = https://github.com/graphdeco-inria/gaussian-splatting.git
+[submodule "mini-splatting"]
+	path = mini-splatting
+	url = https://github.com/fatPeter/mini-splatting.git
+[submodule "LightGaussian"]
+	path = LightGaussian
+	url = https://github.com/VITA-Group/LightGaussian.git
+[submodule "c3dgs"]
+	path = c3dgs
+	url = https://github.com/KeKsBoTer/c3dgs.git

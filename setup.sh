@@ -1,0 +1,19 @@
+#!/bin/bash
+
+mkdir output
+
+mkdir output/base_garden
+mkdir output/base_stump
+mkdir output/base_kitchen
+
+mkdir output/mini_garden
+mkdir output/mini_stump
+mkdir output/mini_kitchen
+
+mkdir output/Light_garden
+mkdir output/Light_stump
+mkdir output/Light_kitchen
+
+mkdir output/c3dgs_garden
+mkdir output/c3dgs_stump
+mkdir output/c3dgs_kitchen
