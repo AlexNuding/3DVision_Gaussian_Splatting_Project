@@ -17,3 +17,5 @@ mkdir output/Light_kitchen
 mkdir output/c3dgs_garden
 mkdir output/c3dgs_stump
 mkdir output/c3dgs_kitchen
+
+mv metrics_mini_compressed.py mini-splatting/metrics_mini_compressed.py

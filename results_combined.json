@@ -1,0 +1,117 @@
+{
+    "Gaussian-Splatting (Base)": {
+        "garden": {
+            "SSIM": 0.8813230991363525,
+            "PSNR": 28.028913497924805,
+            "LPIPS": 0.09622902423143387,
+            "Pointcloud_Size": "814.8 MB",
+            "Checkpoint_Size": "2.3 GB"
+        },
+        "stump": {
+            "SSIM": 0.7856289148330688,
+            "PSNR": 26.95281219482422,
+            "LPIPS": 0.2034137099981308,
+            "Pointcloud_Size": "985.2 MB",
+            "Checkpoint_Size": "2.8 GB"
+        },
+        "kitchen": {
+            "SSIM": 0.9409104585647583,
+            "PSNR": 31.86318016052246,
+            "LPIPS": 0.08907922357320786,
+            "Pointcloud_Size": "359.5 MB",
+            "Checkpoint_Size": "1.0 GB"
+        }
+    },
+    "LightGaussian": {
+        "garden": {
+            "SSIM": 0.85907527556022,
+            "PSNR": 27.36769962310791,
+            "LPIPS": 0.12626132058600584,
+            "Pointcloud_Size": "303.5 MB",
+            "Checkpoint_Size": "881.1 MB"
+        },
+        "stump": {
+            "SSIM": 0.7863732613623142,
+            "PSNR": 27.122305989265442,
+            "LPIPS": 0.21996599528938532,
+            "Pointcloud_Size": "300.9 MB",
+            "Checkpoint_Size": "873.4 MB"
+        },
+        "kitchen": {
+            "SSIM": 0.9347289408956255,
+            "PSNR": 31.330242810930525,
+            "LPIPS": 0.10679259385381426,
+            "Pointcloud_Size": "112.3 MB",
+            "Checkpoint_Size": "325.9 MB"
+        }
+    },
+    "c3dgs": {
+        "garden": {
+            "SSIM": 0.8651275038719177,
+            "PSNR": 27.550413131713867,
+            "LPIPS": 0.12106212228536606,
+            "Pointcloud_Size": "33.6 MB",
+            "Checkpoint_Size": "no seperate checkpoint to base"
+        },
+        "stump": {
+            "SSIM": 0.7722417712211609,
+            "PSNR": 26.629627227783203,
+            "LPIPS": 0.23522314429283142,
+            "Pointcloud_Size": "37.8 MB",
+            "Checkpoint_Size": "no seperate checkpoint to base"
+        },
+        "kitchen": {
+            "SSIM": 0.9323223829269409,
+            "PSNR": 31.146900177001953,
+            "LPIPS": 0.1009770929813385,
+            "Pointcloud_Size": "16.8 MB",
+            "Checkpoint_Size": "no seperate checkpoint to base"
+        }
+    },
+    "Gaussian-Splatting (Mini)": {
+        "garden": {
+            "SSIM": 0.8677484393119812,
+            "PSNR": 27.56853675842285,
+            "LPIPS": 0.13130323588848114,
+            "Pointcloud_Size": "123.9 MB",
+            "Checkpoint_Size": "359.8 MB"
+        },
+        "stump": {
+            "SSIM": 0.8153072595596313,
+            "PSNR": 27.505308151245117,
+            "LPIPS": 0.1879066824913025,
+            "Pointcloud_Size": "140.1 MB",
+            "Checkpoint_Size": "406.7 MB"
+        },
+        "kitchen": {
+            "SSIM": 0.935521125793457,
+            "PSNR": 31.37912940979004,
+            "LPIPS": 0.09982742369174957,
+            "Pointcloud_Size": "86.5 MB",
+            "Checkpoint_Size": "251.2 MB"
+        }
+    },
+    "Mini (Compressed)": {
+        "garden": {
+            "SSIM": 0.8660826086997986,
+            "PSNR": 27.516965866088867,
+            "LPIPS": 0.13303138315677643,
+            "Pointcloud_Size": "30.2 MB",
+            "Checkpoint_Size": "359.8 MB"
+        },
+        "stump": {
+            "SSIM": 0.8135689496994019,
+            "PSNR": 27.465919494628906,
+            "LPIPS": 0.1899656355381012,
+            "Pointcloud_Size": "33.5 MB",
+            "Checkpoint_Size": "406.7 MB"
+        },
+        "kitchen": {
+            "SSIM": 0.9343584179878235,
+            "PSNR": 31.310260772705078,
+            "LPIPS": 0.10110057890415192,
+            "Pointcloud_Size": "20.3 MB",
+            "Checkpoint_Size": "251.2 MB"
+        }
+    }
+}
