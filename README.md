@@ -5,3 +5,4 @@ A combination of the following Gaussian Splatting Projects for evaluation and co
 - Mini-Splatting - https://github.com/fatPeter/mini-splatting
 - LightGaussian - https://github.com/VITA-Group/LightGaussian
 - Compressed 3D Gaussian Splatting - https://github.com/KeKsBoTer/c3dgs
+- Compact 3D - https://github.com/UCDvision/compact3d

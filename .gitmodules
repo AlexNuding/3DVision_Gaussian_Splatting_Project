@@ -10,3 +10,6 @@
 [submodule "c3dgs"]
 	path = c3dgs
 	url = https://github.com/KeKsBoTer/c3dgs.git
+[submodule "compact3d"]
+	path = compact3d
+	url = https://github.com/UCDvision/compact3d.git
