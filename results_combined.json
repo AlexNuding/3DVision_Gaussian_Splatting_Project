@@ -22,16 +22,16 @@
             "Checkpoint_Size": "1.0 GB"
         },
         "truck": {
-            "SSIM": 0,
-            "PSNR": 0,
-            "LPIPS": 0,
+            "SSIM": 0.890600323677063,
+            "PSNR": 25.818479537963867,
+            "LPIPS": 0.14770197868347168,
             "Pointcloud_Size": "456.7 MB",
             "Checkpoint_Size": "1.29 GB"
         },
         "train": {
-            "SSIM": 0,
-            "PSNR": 0,
-            "LPIPS": 0,
+            "SSIM": 0.8276934623718262,
+            "PSNR": 22.307985305786133,
+            "LPIPS": 0.20258459448814392,
             "Pointcloud_Size": "251.1 MB",
             "Checkpoint_Size": "729.0 MB"
         }
