@@ -112,9 +112,9 @@
     },
     "compact3d": {
         "garden": {
-            "SSIM": "NaN",
-            "PSNR": "NaN",
-            "LPIPS": "NaN",
+            "SSIM": 0.8635702729225159,
+            "PSNR": 27.397903442382812,
+            "LPIPS": 0.12719742953777313,
             "Pointcloud_Size": "34.0 MB",
             "Checkpoint_Size": "no seperate checkpoint to base"
         },
@@ -174,14 +174,14 @@
             "PSNR": 25.665821075439453,
             "LPIPS": 0.14095991849899292,
             "Pointcloud_Size": "84.0 MB",
-            "Checkpoint_Size": "0"
+            "Checkpoint_Size": "no seperate checkpoint to base"
         },
         "train": {
             "SSIM": 0.8183744549751282,
             "PSNR": 21.690900802612305,
             "LPIPS": 0.2239093780517578,
             "Pointcloud_Size": "70.3 MB",
-            "Checkpoint_Size": "0"
+            "Checkpoint_Size": "no seperate checkpoint to base"
         }
     },
     "Mini (Compressed)": {
@@ -205,6 +205,20 @@
             "LPIPS": 0.10110057890415192,
             "Pointcloud_Size": "20.3 MB",
             "Checkpoint_Size": "251.2 MB"
+        },
+        "truck": {
+            "SSIM": 0.8874619007110596,
+            "PSNR": 25.635913848876953,
+            "LPIPS": 0.14246703684329987,
+            "Pointcloud_Size": "19.4 MB",
+            "Checkpoint_Size": "no seperate checkpoint to base"
+        },
+        "train": {
+            "SSIM": 0.8168669939041138,
+            "PSNR": 21.662614822387695,
+            "LPIPS": 0.2257976531982422,
+            "Pointcloud_Size": "16.3 MB",
+            "Checkpoint_Size": "no seperate checkpoint to base"
         }
     }
 }
