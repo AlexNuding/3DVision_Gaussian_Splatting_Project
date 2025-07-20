@@ -1,0 +1,254 @@
+{
+    "Gaussian-Splatting (Base)": {
+        "garden": {
+            "SSIM": 0.8813230991363525,
+            "PSNR": 28.028913497924805,
+            "LPIPS": 0.09622902423143387,
+            "Pointcloud_Size": "814.8 MB",
+            "Checkpoint_Size": "2.3 GB",
+            "FPS": 171
+        },
+        "stump": {
+            "SSIM": 0.7856289148330688,
+            "PSNR": 26.95281219482422,
+            "LPIPS": 0.2034137099981308,
+            "Pointcloud_Size": "985.2 MB",
+            "Checkpoint_Size": "2.8 GB",
+            "FPS": 174
+        },
+        "kitchen": {
+            "SSIM": 0.9409104585647583,
+            "PSNR": 31.86318016052246,
+            "LPIPS": 0.08907922357320786,
+            "Pointcloud_Size": "359.5 MB",
+            "Checkpoint_Size": "1.0 GB",
+            "FPS": 201
+        },
+        "truck": {
+            "SSIM": 0.890600323677063,
+            "PSNR": 25.818479537963867,
+            "LPIPS": 0.14770197868347168,
+            "Pointcloud_Size": "456.7 MB",
+            "Checkpoint_Size": "1.29 GB",
+            "FPS": 164
+        },
+        "train": {
+            "SSIM": 0.8276934623718262,
+            "PSNR": 22.307985305786133,
+            "LPIPS": 0.20258459448814392,
+            "Pointcloud_Size": "251.1 MB",
+            "Checkpoint_Size": "729.0 MB",
+            "FPS": 139
+        }
+    },
+    "LightGaussian": {
+        "garden": {
+            "SSIM": 0.85907527556022,
+            "PSNR": 27.36769962310791,
+            "LPIPS": 0.12626132058600584,
+            "Pointcloud_Size": "303.5 MB",
+            "Checkpoint_Size": "881.1 MB",
+            "FPS": 239
+        },
+        "stump": {
+            "SSIM": 0.7863732613623142,
+            "PSNR": 27.122305989265442,
+            "LPIPS": 0.21996599528938532,
+            "Pointcloud_Size": "300.9 MB",
+            "Checkpoint_Size": "873.4 MB",
+            "FPS": 269
+        },
+        "kitchen": {
+            "SSIM": 0.9347289408956255,
+            "PSNR": 31.330242810930525,
+            "LPIPS": 0.10679259385381426,
+            "Pointcloud_Size": "112.3 MB",
+            "Checkpoint_Size": "325.9 MB",
+            "FPS": 251
+        },
+        "truck": {
+            "SSIM": 0.8738115672022104,
+            "PSNR": 25.152106821537018,
+            "LPIPS": 0.1819883524440229,
+            "Pointcloud_Size": "152.1 MB",
+            "Checkpoint_Size": "441.6 MB",
+            "FPS": 186
+        },
+        "train": {
+            "SSIM": 0.85907527556022,
+            "PSNR": 21.656853399778665,
+            "LPIPS": 0.12626132058600584,
+            "Pointcloud_Size": "61.2 MB",
+            "Checkpoint_Size": "177.8 MB",
+            "FPS": 201
+        }
+    },
+    "Compressed 3DGS": {
+        "garden": {
+            "SSIM": 0.8651275038719177,
+            "PSNR": 27.550413131713867,
+            "LPIPS": 0.12106212228536606,
+            "Pointcloud_Size": "33.6 MB",
+            "Checkpoint_Size": "no seperate checkpoint to base",
+            "FPS": 174
+        },
+        "stump": {
+            "SSIM": 0.7722417712211609,
+            "PSNR": 26.629627227783203,
+            "LPIPS": 0.23522314429283142,
+            "Pointcloud_Size": "37.8 MB",
+            "Checkpoint_Size": "no seperate checkpoint to base",
+            "FPS": 178
+        },
+        "kitchen": {
+            "SSIM": 0.9323223829269409,
+            "PSNR": 31.146900177001953,
+            "LPIPS": 0.1009770929813385,
+            "Pointcloud_Size": "16.8 MB",
+            "Checkpoint_Size": "no seperate checkpoint to base",
+            "FPS": 212
+        },
+        "truck": {
+            "SSIM": 0.8846944570541382,
+            "PSNR": 25.541255950927734,
+            "LPIPS": 0.159329354763031,
+            "Pointcloud_Size": "20.5 MB",
+            "Checkpoint_Size": "no seperate checkpoint to base",
+            "FPS": 172
+        },
+        "train": {
+            "SSIM": 0.8163861036300659,
+            "PSNR": 21.872461318969727,
+            "LPIPS": 0.22178898751735687,
+            "Pointcloud_Size": "14.4 MB",
+            "Checkpoint_Size": "no seperate checkpoint to base",
+            "FPS": 151
+        }
+    },
+    "compGS": {
+        "garden": {
+            "SSIM": 0.8635702729225159,
+            "PSNR": 27.397903442382812,
+            "LPIPS": 0.12719742953777313,
+            "Pointcloud_Size": "34.0 MB",
+            "Checkpoint_Size": "no seperate checkpoint to base",
+            "FPS": 0
+        },
+        "stump": {
+            "SSIM": 0.7807245254516602,
+            "PSNR": 26.817306518554688,
+            "LPIPS": 0.22754903137683868,
+            "Pointcloud_Size": "31.0 MB",
+            "Checkpoint_Size": "no seperate checkpoint to base",
+            "FPS": 0
+        },
+        "kitchen": {
+            "SSIM": 0.930176854133606,
+            "PSNR": 30.43052101135254,
+            "LPIPS": 0.10632210969924927,
+            "Pointcloud_Size": "15.6 MB",
+            "Checkpoint_Size": "no seperate checkpoint to base",
+            "FPS": 0
+        },
+        "truck": {
+            "SSIM": 0.8795034885406494,
+            "PSNR": 25.24971580505371,
+            "LPIPS": 0.17451706528663635,
+            "Pointcloud_Size": "13.7 MB",
+            "Checkpoint_Size": "no seperate checkpoint to base",
+            "FPS": 0
+        },
+        "train": {
+            "SSIM": 0.8080630302429199,
+            "PSNR": 21.717058181762695,
+            "LPIPS": 0.24012334644794464,
+            "Pointcloud_Size": "12.5 MB",
+            "Checkpoint_Size": "no seperate checkpoint to base",
+            "FPS": 0
+        }
+    },
+    "Mini-Splatting": {
+        "garden": {
+            "SSIM": 0.8677484393119812,
+            "PSNR": 27.56853675842285,
+            "LPIPS": 0.13130323588848114,
+            "Pointcloud_Size": "123.9 MB",
+            "Checkpoint_Size": "359.8 MB",
+            "FPS": 625
+        },
+        "stump": {
+            "SSIM": 0.8153072595596313,
+            "PSNR": 27.505308151245117,
+            "LPIPS": 0.1879066824913025,
+            "Pointcloud_Size": "140.1 MB",
+            "Checkpoint_Size": "406.7 MB",
+            "FPS": 560
+        },
+        "kitchen": {
+            "SSIM": 0.935521125793457,
+            "PSNR": 31.37912940979004,
+            "LPIPS": 0.09982742369174957,
+            "Pointcloud_Size": "86.5 MB",
+            "Checkpoint_Size": "251.2 MB",
+            "FPS": 561
+        },
+        "truck": {
+            "SSIM": 0.888814389705658,
+            "PSNR": 25.665821075439453,
+            "LPIPS": 0.14095991849899292,
+            "Pointcloud_Size": "84.0 MB",
+            "Checkpoint_Size": "no seperate checkpoint to base",
+            "FPS": 425
+        },
+        "train": {
+            "SSIM": 0.8183744549751282,
+            "PSNR": 21.690900802612305,
+            "LPIPS": 0.2239093780517578,
+            "Pointcloud_Size": "70.3 MB",
+            "Checkpoint_Size": "no seperate checkpoint to base",
+            "FPS": 442
+        }
+    },
+    "Mini-Splatting-C": {
+        "garden": {
+            "SSIM": 0.8660826086997986,
+            "PSNR": 27.516965866088867,
+            "LPIPS": 0.13303138315677643,
+            "Pointcloud_Size": "30.2 MB",
+            "Checkpoint_Size": "359.8 MB",
+            "FPS": 0
+        },
+        "stump": {
+            "SSIM": 0.8135689496994019,
+            "PSNR": 27.465919494628906,
+            "LPIPS": 0.1899656355381012,
+            "Pointcloud_Size": "33.5 MB",
+            "Checkpoint_Size": "406.7 MB",
+            "FPS": 0
+        },
+        "kitchen": {
+            "SSIM": 0.9343584179878235,
+            "PSNR": 31.310260772705078,
+            "LPIPS": 0.10110057890415192,
+            "Pointcloud_Size": "20.3 MB",
+            "Checkpoint_Size": "251.2 MB",
+            "FPS": 0
+        },
+        "truck": {
+            "SSIM": 0.8874619007110596,
+            "PSNR": 25.635913848876953,
+            "LPIPS": 0.14246703684329987,
+            "Pointcloud_Size": "19.4 MB",
+            "Checkpoint_Size": "no seperate checkpoint to base",
+            "FPS": 0
+        },
+        "train": {
+            "SSIM": 0.8168669939041138,
+            "PSNR": 21.662614822387695,
+            "LPIPS": 0.2257976531982422,
+            "Pointcloud_Size": "16.3 MB",
+            "Checkpoint_Size": "no seperate checkpoint to base",
+            "FPS": 0
+        }
+    }
+}
