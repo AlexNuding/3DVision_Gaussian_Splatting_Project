@@ -58,7 +58,7 @@ def find_pointcloud_size(folder, compressed=False, is_c3dgs=False):
     return format_size(files[0].stat().st_size)
 
 def build_results():
-    scenes = ['garden', 'stump', 'kitchen']
+    scenes = ['garden', 'stump', 'kitchen', 'train', 'truck']
     output = {
         "Gaussian-Splatting (Base)": {},
         "LightGaussian": {},
@@ -108,7 +108,7 @@ def build_results():
             "Checkpoint_Size": "no seperate checkpoint to base"
         }
 
-        # MINI STANDARD
+        # MINI
         mini_metrics = read_results_json(mini_folder)
         if mini_metrics:
             mini_ckpt = find_checkpoint_size(mini_folder)
