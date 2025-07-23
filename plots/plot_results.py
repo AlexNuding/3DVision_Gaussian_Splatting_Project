@@ -102,3 +102,61 @@ plot_memory_vs_x("MipNeRF", "SSIM")
 plot_memory_vs_x("TnT", "SSIM")
 plot_memory_vs_x("MipNeRF", "LPIPS")
 plot_memory_vs_x("TnT", "LPIPS")
+
+
+# average pointcloud size graph
+plt.figure(figsize=(12, 6))
+methods = list(averaged_results.keys())
+mipnerf_sizes = [averaged_results[m]["MipNeRF"]["Avg_Pointcloud_Size_MB"] for m in methods]
+tnt_sizes = [averaged_results[m]["TnT"]["Avg_Pointcloud_Size_MB"] for m in methods]
+
+x = range(len(methods))
+width = 0.35
+plt.bar([i - width/2 for i in x], mipnerf_sizes, width, label='MipNeRF Scenes')
+plt.bar([i + width/2 for i in x], tnt_sizes, width, label='TnT Scenes')
+
+plt.xlabel('Methods')
+plt.ylabel('Pointcloud Size (MB)')
+plt.title('Average Pointcloud Size Comparison')
+plt.xticks(x, methods, rotation=45, ha='right')
+plt.legend()
+plt.grid(True, axis='y', linestyle='--', alpha=0.7)
+plt.tight_layout()
+plt.savefig("average_pointcloud_size_comparison.png")
+plt.show()
+
+# average PSNR graph
+plt.figure(figsize=(12, 6))
+mipnerf_psnr = [averaged_results[m]["MipNeRF"]["PSNR"] for m in methods]
+tnt_psnr = [averaged_results[m]["TnT"]["PSNR"] for m in methods]
+
+plt.bar([i - width/2 for i in x], mipnerf_psnr, width, label='MipNeRF Scenes')
+plt.bar([i + width/2 for i in x], tnt_psnr, width, label='TnT Scenes')
+
+plt.xlabel('Methods')
+plt.ylabel('PSNR')
+plt.title('Average PSNR Comparison')
+plt.xticks(x, methods, rotation=45, ha='right')
+plt.legend()
+plt.grid(True, axis='y', linestyle='--', alpha=0.7)
+plt.tight_layout()
+plt.savefig("average_psnr_comparison.png")
+plt.show()
+
+# average FPS graph
+plt.figure(figsize=(12, 6))
+mipnerf_fps = [averaged_results[m]["MipNeRF"]["FPS"] for m in methods]
+tnt_fps = [averaged_results[m]["TnT"]["FPS"] for m in methods]
+
+plt.bar([i - width/2 for i in x], mipnerf_fps, width, label='MipNeRF Scenes')
+plt.bar([i + width/2 for i in x], tnt_fps, width, label='TnT Scenes')
+
+plt.xlabel('Methods')
+plt.ylabel('FPS')
+plt.title('Average FPS Comparison')
+plt.xticks(x, methods, rotation=45, ha='right')
+plt.legend()
+plt.grid(True, axis='y', linestyle='--', alpha=0.7)
+plt.tight_layout()
+plt.savefig("average_fps_comparison.png")
+plt.show()
