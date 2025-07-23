@@ -2,6 +2,7 @@ import json
 from collections import defaultdict
 import matplotlib.pyplot as plt
 import matplotlib.ticker as ticker
+from matplotlib.lines import Line2D
 
 with open("results_and_fps.json", "r") as f:
     data = json.load(f)
@@ -159,4 +160,84 @@ plt.legend()
 plt.grid(True, axis='y', linestyle='--', alpha=0.7)
 plt.tight_layout()
 plt.savefig("average_fps_comparison.png")
+plt.show()
+
+
+
+plt.figure(figsize=(10, 6))
+colors = plt.cm.tab10.colors
+method_colors = {method: colors[i % len(colors)] for i, method in enumerate(averaged_results.keys())}
+
+all_fps = []
+for metrics in averaged_results.values():
+    all_fps.append(metrics["MipNeRF"]["FPS"])
+    all_fps.append(metrics["TnT"]["FPS"])
+fps_range = max(all_fps) - min(all_fps)
+fps_offset = 0.02 * fps_range 
+
+for method, metrics in averaged_results.items():
+    if method in ["compGS", "Mini-Splatting-C"]:
+        continue
+    
+    color = method_colors[method]
+    
+    # MipNeRF data (circles)
+    x_mip = metrics["MipNeRF"]["Avg_Pointcloud_Size_MB"]
+    y_mip = metrics["MipNeRF"]["FPS"]
+    plt.scatter(x_mip, y_mip, marker='o', color=color, s=80, label=f'{method} (MipNeRF)' if method == list(averaged_results.keys())[0] else "")
+    plt.text(x_mip, y_mip + fps_offset, method, fontsize=8, ha='center', va='bottom')
+    
+    # TnT data (squares)
+    x_tnt = metrics["TnT"]["Avg_Pointcloud_Size_MB"]
+    y_tnt = metrics["TnT"]["FPS"]
+    plt.scatter(x_tnt, y_tnt, marker='s', color=color, s=80, label=f'{method} (TnT)' if method == list(averaged_results.keys())[0] else "")
+    plt.text(x_tnt, y_tnt + fps_offset, method, fontsize=8, ha='center', va='bottom')
+
+legend_elements = [
+    Line2D([0], [0], marker='o', color='w', label='MipNeRF Scenes',
+          markerfacecolor='gray', markersize=10),
+    Line2D([0], [0], marker='s', color='w', label='TnT Scenes',
+          markerfacecolor='gray', markersize=10)
+]
+plt.legend(handles=legend_elements, loc='upper right')
+
+plt.title("Avg Pointcloud Size vs FPS (All Scenes)")
+plt.xlabel("Avg Pointcloud Size (MB)")
+plt.ylabel("FPS")
+plt.grid(True, which='both', linestyle='--', linewidth=0.5)
+plt.tight_layout()
+plt.savefig("combined_pointcloud_vs_fps.png", dpi=300)
+plt.show()
+
+
+plt.figure(figsize=(10, 6))
+all_psnr = []
+for metrics in averaged_results.values():
+    all_psnr.append(metrics["MipNeRF"]["PSNR"])
+    all_psnr.append(metrics["TnT"]["PSNR"])
+psnr_range = max(all_psnr) - min(all_psnr)
+psnr_offset = 0.02 * psnr_range
+
+for method, metrics in averaged_results.items():
+    color = method_colors[method]
+    
+    # MipNeRF data (circles)
+    x_mip = metrics["MipNeRF"]["Avg_Pointcloud_Size_MB"]
+    y_mip = metrics["MipNeRF"]["PSNR"]
+    plt.scatter(x_mip, y_mip, marker='o', color=color, s=80, label=f'{method} (MipNeRF)' if method == list(averaged_results.keys())[0] else "")
+    plt.text(x_mip, y_mip + psnr_offset, method, fontsize=8, ha='center', va='bottom')
+    
+    # TnT data (squares)
+    x_tnt = metrics["TnT"]["Avg_Pointcloud_Size_MB"]
+    y_tnt = metrics["TnT"]["PSNR"]
+    plt.scatter(x_tnt, y_tnt, marker='s', color=color, s=80, label=f'{method} (TnT)' if method == list(averaged_results.keys())[0] else "")
+    plt.text(x_tnt, y_tnt + psnr_offset, method, fontsize=8, ha='center', va='bottom')
+
+plt.legend(handles=legend_elements, loc='lower right')
+plt.title("Avg Pointcloud Size vs PSNR (All Scenes)")
+plt.xlabel("Avg Pointcloud Size (MB)")
+plt.ylabel("PSNR")
+plt.grid(True, which='both', linestyle='--', linewidth=0.5)
+plt.tight_layout()
+plt.savefig("combined_pointcloud_vs_psnr.png", dpi=300)
 plt.show()
