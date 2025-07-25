@@ -11,7 +11,7 @@ A combination of the following Gaussian Splatting Projects for evaluation and co
 ## How to Use
 The repository can be used by following the instructions:
 
-1. Clone the repository with ```shell git clone https://github.com/AlexNuding/3DVision_Gaussian_Splatting_Project.git --recursive```
+1. Clone the repository with ```git clone https://github.com/AlexNuding/3DVision_Gaussian_Splatting_Project.git --recursive```
 2. install the environments of each of the gaussian splatting project you want to evaluate
 3. open the console in tha base folder of the repository
 4. run the setup.sh script3
