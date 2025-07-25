@@ -26,4 +26,8 @@ mkdir output/c3dgs_kitchen
 mkdir output/c3dgs_train
 mkdir output/c3dgs_truck
 
+mkdir dataset
+mkdir dataset/360
+mkdir dataset/tandt
+
 mv metrics_mini_compressed.py mini-splatting/metrics_mini_compressed.py
